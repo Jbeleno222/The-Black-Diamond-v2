@@ -1244,6 +1244,7 @@ nav.main-menu {
 .text-bg a:hover {
      background-color: #000;
      color: #fff;
+
 }
 
 .text {
@@ -1325,21 +1326,19 @@ nav.main-menu {
 }
 
 .best_text a {
-     background: #000;
-     border: #ebbf60 solid 3px;
-     width: 190px;
-     padding: 12px 0;
-     font-weight: 500;
-     font-size: 17px;
-     line-height: 30px;
+     font-size: 16px;
+     margin-right: 10px;
+     background-color: #000;
      color: #fff;
+     padding: 10px 40px;
      border-radius: 27px;
-     text-align: center;
-     float: right;
+     display: inline-block;
+     position: absolute;
+     z-index: 10;
 }
 
 .best_text a:hover {
-     background: #f2740d;
+     background: #ebbf60;
      color: #fff;
 }
 
@@ -1488,7 +1487,6 @@ nav.main-menu {
 
 .contact .contact .send {
      font-size: 16px;
-
      background-color: #000;
      color: #fff;
      padding: 10px 60px;
@@ -1498,8 +1496,7 @@ nav.main-menu {
 }
 
 .contact .contact .send:hover {
-     background-color: #f2740d;
-
+     background: #ebbf60;
      color: #fff;
 }
 
@@ -1775,3 +1772,4 @@ footer p {
      height: 400px;
      width: 100%;
 }
+
