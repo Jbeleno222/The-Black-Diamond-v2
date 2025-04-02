@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.titulo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000; /* Color de texto oscuro */
+}
+
+.punto {
+    width: 20px;
+    height: 20px;
+    background-color: #eec668; /* Color dorado */
+    border-radius: 50%;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #222;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.btns a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.comprar {
+    background: #eec668;
+    color: white;
+}
+
+.comprar:hover {
+    background: #000;
+}
+
+.reservar {
+    background: #000;
+    color: white;
+}
+
+.reservar:hover {
+    background: #eec668;
+}
+
+.regresar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.regresar a {
+    text-decoration: none;
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.regresar a:hover {
+    background: #eec668;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.btns a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    min-width: 100px;
+    text-align: center;
+}
+
+.comprar {
+    background: #eec668;
+    color: white;
+}
+
+.comprar:hover {
+    background: #000;
+}
+
+.reservar {
+    background: #000;
+    color: white;
+}
+
+.reservar:hover {
+    background: #eec668;
+}
+
+.agregar-carrito {
+    background: #eec668;
+    color: white;
+}
+
+.agregar-carrito:hover {
+    background: #000;
+}
+
+
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .galery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .galery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 🌐 Tablets en horizontal */
+@media (max-width: 1024px) {
+    .galery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .titulo h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* 📲 Tablets en vertical y móviles grandes */
+@media (max-width: 768px) {
+    .galery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+    }
+
+    .titulo h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .btns a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* 📱 Móviles estándar */
+@media (max-width: 480px) {
+    .galery {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .titulo {
+        flex-direction: column;
+    }
+
+    .titulo h1 {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        padding: 8px;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btns a {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .regresar a {
+        width: 90%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

@@ -117,6 +117,56 @@ p {
     background: #eec668;
 }
 
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.btns a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    min-width: 100px;
+    text-align: center;
+}
+
+.comprar {
+    background: #eec668;
+    color: white;
+}
+
+.comprar:hover {
+    background: #000;
+}
+
+.reservar {
+    background: #000;
+    color: white;
+}
+
+.reservar:hover {
+    background: #eec668;
+}
+
+.agregar-carrito {
+    background: #eec668;
+    color: white;
+}
+
+.agregar-carrito:hover {
+    background: #000;
+}
+
+
 
 /* Diseño responsive */
 @media (max-width: 768px) {
@@ -128,5 +178,77 @@ p {
 @media (max-width: 480px) {
     .galery {
         grid-template-columns: 1fr;
+    }
+}
+
+/* 🌐 Tablets en horizontal */
+@media (max-width: 1024px) {
+    .galery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .titulo h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* 📲 Tablets en vertical y móviles grandes */
+@media (max-width: 768px) {
+    .galery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+    }
+
+    .titulo h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .btns a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* 📱 Móviles estándar */
+@media (max-width: 480px) {
+    .galery {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .titulo {
+        flex-direction: column;
+    }
+
+    .titulo h1 {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        padding: 8px;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btns a {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .regresar a {
+        width: 90%;
+        font-size: 1rem;
+        padding: 10px;
     }
 }
